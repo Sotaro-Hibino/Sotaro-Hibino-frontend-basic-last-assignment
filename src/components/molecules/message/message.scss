@@ -10,10 +10,12 @@
     line-height: 54px;
     font-family: $fontfamily-mincho;
     size: $fontsize-xl;
+    margin-bottom: 0px;
   }
   p {
     line-height: 36px;
     font-size: $fontsize-s;
+    margin-bottom: 0px;
   }
   @media screen and (max-width: $breakpoint-lg) {
     .text {
