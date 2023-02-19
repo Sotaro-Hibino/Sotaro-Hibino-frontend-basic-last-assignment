@@ -10,7 +10,7 @@
   text-decoration: none;
   color: $white;
   transition: background-color 0.2s ease 0s;
-  font-size: 14px;
+  font-size: $fontsize-s;
 
   &:hover {
     background-color: $orange_bistre;
