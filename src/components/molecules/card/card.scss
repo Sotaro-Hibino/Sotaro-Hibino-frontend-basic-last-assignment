@@ -25,6 +25,7 @@
   }
   .card-img {
     overflow: hidden;
+    border-radius: 0;
     img {
       width: 100%;
       transition: 0.5s;
@@ -37,17 +38,20 @@
   }
   .card-body {
     display: flex;
-    align-items: center;
     flex-direction: column;
     padding: 32px;
     background-color: $white_smoke;
-
   }
   .card-text {
     padding-bottom: 30px;
     font-size: $fontsize-s;
     font-weight: 400;
     line-height: 33px;
+    align-self: flex-start;
+    margin-bottom: 0px;
   }
-  
+
+  .button{
+    align-self: center;
+  }
 }
