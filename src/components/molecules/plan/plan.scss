@@ -1,0 +1,56 @@
+@use "../../variables" as *;
+.plan {
+  text-align: center;
+  &:nth-child(odd) {
+    border: 5px solid $gray_gainsboro;
+    box-sizing: border-box;
+    .plan-title {
+      background-color: $orange_zorba;
+    }
+  }
+  &:nth-child(even) {
+    border: 5px solid $orange_bistre;
+    box-sizing: border-box;
+    .plan-title {
+      background-color: $orange_bistre;
+    }
+  }
+  .plan-title {
+    padding: 20px;
+    margin-bottom: 0px;
+    color: $white;
+  }
+  .plan-price {
+    background-color: $gray_desertStorm;
+    border: 1px solid $gray_desertStorm;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    &:nth-of-type(4) {
+      border-bottom: none;
+    }
+    
+    .plan-price1 {
+      font-size: $fontsize-l;
+      font-weight: 700;
+      b {
+        font-size: $fontsize-xxl;
+      }
+    }
+    .price-text {
+      margin-bottom: 0px;
+    }
+  }
+  .plan-text {
+    overflow-wrap: break-word;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    font-size: $fontsize-s;
+    border-left: solid 1px $gray_gainsboro;
+    border-right: solid 1px $gray_gainsboro;
+    border-bottom: solid 1px $gray_gainsboro;
+    margin-bottom: 0px;
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    margin-bottom: 24px;
+  }
+}
