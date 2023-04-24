@@ -2,6 +2,7 @@
 .plan {
   text-align: center;
   &:nth-child(odd) {
+    
     .plan-title {
       background-color: $orange_zorba;
     }
