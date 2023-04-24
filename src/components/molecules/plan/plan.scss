@@ -2,15 +2,13 @@
 .plan {
   text-align: center;
   &:nth-child(odd) {
-    border: 5px solid $gray_gainsboro;
-    box-sizing: border-box;
     .plan-title {
       background-color: $orange_zorba;
     }
   }
   &:nth-child(even) {
     border: 5px solid $orange_bistre;
-    box-sizing: border-box;
+    outline-offset: -5px;
     .plan-title {
       background-color: $orange_bistre;
     }
