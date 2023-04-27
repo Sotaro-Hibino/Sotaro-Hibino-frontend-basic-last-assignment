@@ -2,7 +2,6 @@
 .plan {
   text-align: center;
   &:nth-child(odd) {
-    
     .plan-title {
       background-color: $orange_zorba;
     }
@@ -16,6 +15,8 @@
   }
   .plan-title {
     padding: 20px;
+    font-size: $fontsize-l;
+    font-weight: 700;
     margin-bottom: 0px;
     color: $white;
   }
@@ -24,10 +25,11 @@
     border: 1px solid $gray_desertStorm;
     padding-top: 24px;
     padding-bottom: 24px;
+    color: $orange_bistre;
     &:nth-of-type(4) {
       border-bottom: none;
     }
-    
+
     .plan-price1 {
       font-size: $fontsize-l;
       font-weight: 700;
@@ -41,8 +43,7 @@
   }
   .plan-text {
     overflow-wrap: break-word;
-    padding-top: 20px;
-    padding-bottom: 24px;
+    padding: 24px 0;
     font-size: $fontsize-s;
     border-left: solid 1px $gray_gainsboro;
     border-right: solid 1px $gray_gainsboro;
