@@ -1,1 +1,30 @@
 @use "../../../variables" as *;
+.header {
+  background-color: $black;
+  .concept-container {
+    display: flex;
+    .humberger-text {
+      font-weight: 400;
+      font-size: $fontsize-s;
+      color: $white;
+      text-decoration: none;
+    }
+    .navber-toggler {
+      background-color: $black;
+      margin-left: autso;
+    }
+  }
+
+  .dropdown-item {
+    color: $white;
+    font-weight: 400;
+    font-size: $fontsize-s;
+    padding: 15px 0px;
+  }
+  .nav-link {
+    font-weight: 400;
+    font-size: $fontsize-s;
+    color: $white;
+    padding: 15px 0px;
+  }
+}
