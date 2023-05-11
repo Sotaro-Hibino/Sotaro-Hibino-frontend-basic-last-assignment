@@ -1,6 +1,7 @@
 @use "../../../variables" as *;
 .header {
   background-color: $black;
+  position: relative;
   .concept-container {
     display: flex;
     .humberger-text {
@@ -9,9 +10,26 @@
       color: $white;
       text-decoration: none;
     }
-    .navber-toggler {
+    .navbar-toggler {
       background-color: $black;
-      margin-left: autso;
+      margin-left: auto;
+    }
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    .container-fluid {
+      margin-left: auto;
+    }
+  }
+  .humberger-text {
+    padding: 15px 0px;
+    @media screen and(min-width:$breakpoint-xl) {
+      padding: 15px 8px;
+      position: relative;
+    }
+  }
+  @media screen and (min-width: $breakpoint-xl) {
+    .collaspe {
+      position: absolute;
     }
   }
 
@@ -26,5 +44,11 @@
     font-size: $fontsize-s;
     color: $white;
     padding: 15px 0px;
+    @media screen and (max-width: $breakpoint-xl) {
+      margin-left: auto;
+    }
   }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
 }
