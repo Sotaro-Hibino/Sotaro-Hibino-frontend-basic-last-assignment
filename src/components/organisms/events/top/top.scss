@@ -1,0 +1,58 @@
+@use "../../../variables" as *;
+.top {
+  position: relative;
+  font-family: Noto Serif JP;
+  img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    @media screen and (max-width: $breakpoint-lg) {
+      height: 360px;
+    }
+  }
+
+  .top-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .top-title {
+      position: absolute;
+      z-index: 1;
+      writing-mode: vertical-rl;
+      color: $white;
+      line-height: 36px;
+      @media screen and(max-width:$breakpoint-lg) {
+        line-height: 28px;
+        font-size: $fontsize-l;
+      }
+    }
+  }
+
+  .top-text-container {
+    position: relative;
+    align-items: center;
+    text-align: center;
+
+    background-color: $black;
+    width: 100%;
+    padding: 52px 36.5px;
+
+    .top-text-title {
+      color: $white;
+      font-size: $fontsize-xl;
+      @media screen and(max-width:$breakpoint-lg) {
+        font-size: $fontsize-l;
+      }
+    }
+  }
+  .top-text-p {
+    color: $white;
+    font-size: $fontsize-s;
+    line-height: 36px;
+    padding-top: 10px;
+    @media screen and(max-width:$breakpoint-lg) {
+      line-height: 28px;
+      padding-top: 6px;
+    }
+  }
+}
