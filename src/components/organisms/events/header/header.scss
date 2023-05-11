@@ -1,7 +1,7 @@
 @use "../../../variables" as *;
 .header {
-  background-color: $black;
   position: relative;
+  
   .concept-container {
     display: flex;
     .humberger-text {
@@ -23,7 +23,7 @@
   .humberger-text {
     padding: 15px 0px;
     @media screen and(min-width:$breakpoint-xl) {
-      padding: 15px 8px;
+      padding: 20px 8px;
       position: relative;
     }
   }
@@ -44,8 +44,9 @@
     font-size: $fontsize-s;
     color: $white;
     padding: 15px 0px;
-    @media screen and (max-width: $breakpoint-xl) {
+    @media screen and (min-width: $breakpoint-xl) {
       margin-left: auto;
+      padding: 20px;
     }
   }
 }
