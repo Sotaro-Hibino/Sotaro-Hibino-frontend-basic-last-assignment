@@ -1,0 +1,32 @@
+@use "../../../variables" as *;
+.organisms-news {
+  display: flex;
+  flex-direction: column;
+  .news-list {
+    border: 1px solid $gray_gainsboro;
+  }
+  .news-text-box {
+    text-decoration: none;
+  }
+  .news-text-box2 {
+    border: 1px solid $gray_gainsboro;
+    background-color: $white;
+    padding: 20px 26px 20px 20px;
+    .news-date {
+      font-size: $fontsize-xs;
+      margin-bottom: 10px;
+      color: $gray_nobel;
+    }
+    .news-text-caption {
+      font-size: $fontsize-m;
+      color: $black;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .news-and-events-more {
+    margin-top: 30px;
+    align-self: flex-end;
+  }
+}
