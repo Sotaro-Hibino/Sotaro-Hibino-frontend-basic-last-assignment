@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+.plans {
+  .text {
+    h2 {
+      color: $orange_bistre;
+      font-family: $fontfamily-mincho;
+    }
+    padding-bottom: 56px;
+    text-align: center;
+  }
+  .plans-box {
+    @media screen and(min-width:$breakpoint-md) {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .plan {
+    gap: 24px;
+  }
+  .button {
+    margin: auto;
+    margin-bottom: 19px;
+    @media screen and(min-width:$breakpoint-md) {
+        margin-top: 45px;
+        margin-bottom: 100px;
+      }
+  }
+}
