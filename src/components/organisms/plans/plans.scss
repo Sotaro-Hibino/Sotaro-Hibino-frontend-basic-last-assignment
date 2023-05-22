@@ -3,7 +3,6 @@
   .text {
     h2 {
       color: $orange_bistre;
-      font-family: $fontfamily-mincho;
     }
     padding-bottom: 56px;
     text-align: center;
@@ -20,10 +19,10 @@
   }
   .button {
     margin: auto;
-    margin-bottom: 19px;
+    margin-bottom: 35px;
     @media screen and(min-width:$breakpoint-md) {
-        margin-top: 46px;
-        margin-bottom: 100px;
-      }
+      margin-top: 46px;
+      margin-bottom: 100px;
+    }
   }
 }
