@@ -4,10 +4,12 @@
   position: relative;
   background-color: $black;
   padding-left: 16px;
+  padding-right: 8px;
   @media screen and (min-width: $breakpoint-xl) {
     padding-right: 20px;
     padding-left: 20px;
   }
+
   .switch-img {
     img {
       width: 120px;
@@ -60,13 +62,17 @@
     position: relative;
 
     @media screen and (min-width: $breakpoint-xl) {
-      margin-top: 65px;
+      margin-top: 60px;
+      margin-left: 45px;
     }
     .dropdown-item {
       color: $white;
       font-size: $fontsize-s;
       padding-top: 18px;
       padding-bottom: 18px;
+      &:hover {
+        background-color: $orange_bistre;
+      }
     }
   }
   .nav-link {
@@ -79,5 +85,11 @@
       margin-left: auto;
       padding: 20px;
     }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .header:not(.dropdown-menu) {
+    opacity: 50%;
   }
 }
