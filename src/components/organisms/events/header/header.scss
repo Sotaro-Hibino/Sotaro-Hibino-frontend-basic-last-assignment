@@ -1,7 +1,26 @@
 @use "../../../variables" as *;
+
 .header {
   position: relative;
-  
+  background-color: $black;
+  padding-left: 16px;
+  @media screen and (min-width: $breakpoint-xl) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .switch-img {
+    img {
+      width: 120px;
+      @media screen and (min-width: $breakpoint-xl) {
+        padding-left: 10px;
+        width: 140px;
+      }
+    }
+  }
+  .container-fluid {
+    padding: 0px;
+  }
+
   .concept-container {
     display: flex;
     .humberger-text {
@@ -33,23 +52,32 @@
     }
   }
 
-  .dropdown-item {
-    color: $white;
-    font-weight: 400;
-    font-size: $fontsize-s;
-    padding: 15px 0px;
+  .concept-container {
+    position: relative;
+  }
+  .dropdown-menu {
+    background-color: $black;
+    position: relative;
+
+    @media screen and (min-width: $breakpoint-xl) {
+      margin-top: 65px;
+    }
+    .dropdown-item {
+      color: $white;
+      font-size: $fontsize-s;
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
   }
   .nav-link {
     font-weight: 400;
     font-size: $fontsize-s;
     color: $white;
+    text-decoration: none;
     padding: 15px 0px;
     @media screen and (min-width: $breakpoint-xl) {
       margin-left: auto;
       padding: 20px;
     }
   }
-}
-
-@media screen and (min-width: $breakpoint-xl) {
 }
