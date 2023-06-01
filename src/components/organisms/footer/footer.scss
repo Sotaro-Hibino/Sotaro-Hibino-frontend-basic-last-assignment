@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   .footer-title {
-    padding-top: 32px;
+    padding-top: 52px;
     padding-bottom: 20px;
     img {
       width: 150px;
@@ -22,6 +22,7 @@
     padding-top: 20px;
     .icon {
       transition: 0.2s ease;
+      color: $black;
       &:hover {
         color: $gray_nobel;
       }
@@ -43,6 +44,7 @@
       list-style: none;
       display: flex;
       flex-direction: row;
+      margin-bottom: 0px;
 
       padding-left: 0px;
     }
@@ -53,6 +55,7 @@
       a {
         text-decoration: none;
         color: $black;
+        font-size: $fontsize-s;
         transition: 0.2s ease;
         &:hover {
           color: $orange_bistre;
@@ -76,6 +79,9 @@
 @media screen and(max-width:$breakpoint-md) {
   .footer {
     display: flex;
+    .footer-title {
+      padding-top: 32px;
+    }
     .footer-menu {
       column-count: 2;
       width: 100%;
