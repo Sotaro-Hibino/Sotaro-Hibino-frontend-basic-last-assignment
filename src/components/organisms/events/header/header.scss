@@ -5,9 +5,18 @@
   background-color: $black;
   padding-left: 16px;
   padding-right: 8px;
+  
   @media screen and (min-width: $breakpoint-xl) {
     padding-right: 20px;
     padding-left: 20px;
+    background-color: $black_50;
+  }
+
+  @media screen and (min-width:1200px){
+    .navbar-expand-xl .navbar-nav .nav-link{
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 
   .switch-img {
@@ -42,9 +51,9 @@
     }
   }
   .humberger-text {
-    padding: 15px 0px;
+    padding: 15px 20px;
     @media screen and(min-width:$breakpoint-xl) {
-      padding: 20px 8px;
+      padding: 20px 20px;
       position: relative;
     }
   }
@@ -60,19 +69,29 @@
   .dropdown-menu {
     background-color: $black;
     position: relative;
+    border-radius: 0%;
 
     @media screen and (min-width: $breakpoint-xl) {
-      margin-top: 60px;
+      margin-top: 68px;
       margin-left: 45px;
     }
     .dropdown-item {
+      
       color: $white;
       font-size: $fontsize-s;
-      padding-top: 18px;
-      padding-bottom: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    
       &:hover {
-        background-color: $orange_bistre;
+        background-color: $black;
       }
+      @media screen and (min-width: $breakpoint-xl) {
+        background-color: $black;
+        &:hover {
+          background-color: $orange_bistre;
+        }
+      }
+      
     }
   }
   .nav-link {
@@ -88,8 +107,4 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-xl) {
-  .header:not(.dropdown-menu) {
-    opacity: 50%;
-  }
-}
+
