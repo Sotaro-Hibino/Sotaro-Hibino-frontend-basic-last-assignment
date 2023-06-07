@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+@media screen and (min-width: $breakpoint-lg) {
+    
+  .news-and-events {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .news-text-box {
+    display: flex;
+    .news-text-box2{
+        width: 100%;
+    }
+
+   
+  }
+}
