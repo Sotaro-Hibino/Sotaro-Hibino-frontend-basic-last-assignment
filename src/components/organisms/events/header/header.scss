@@ -75,6 +75,10 @@
     position: relative;
     border-radius: 0%;
 
+    &.collapsing {
+      display: block;
+    }
+
     @media screen and (min-width: $breakpoint-xl) {
       padding-top: 0px;
       padding-bottom: 0px;
@@ -107,7 +111,7 @@
     @media screen and (min-width: $breakpoint-xl) {
       margin-left: auto;
       padding: 20px;
-       &:hover {
+      &:hover {
         color: $gray_nobel;
       }
     }
