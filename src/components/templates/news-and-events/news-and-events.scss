@@ -1,18 +1,22 @@
 @use "../../variables" as *;
 
 @media screen and (min-width: $breakpoint-lg) {
-    
   .news-and-events {
     display: flex;
     flex-direction: row;
+    gap: 4%;
   }
-  
+
+  .organisms-news {
+    width: 48%;
+  }
+  .events {
+    width: 48%;
+  }
   .news-text-box {
     display: flex;
-    .news-text-box2{
-        width: 100%;
+    .news-text-box2 {
+      width: 100%;
     }
-
-   
   }
 }
