@@ -1,4 +1,7 @@
 @use "../../variables" as *;
+.news-and-events{
+  padding: 15px;
+}
 
 @media screen and (min-width: $breakpoint-lg) {
   .news-and-events {
